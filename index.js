@@ -61,7 +61,7 @@ client.on(Events.MessageCreate, async message => {
 
             const pokemonName = response.choices[0].message.content.trim();
             if (pokemonName) {
-              await message.channel.send(`It's **${pokemonName}**! \`<@716390085896962058> catch ${pokemonName}\``);
+              await message.channel.send(`It's **${pokemonName}**!`);
             }
           } catch (error) {
             console.error("Error identifying Pokemon:", error);
